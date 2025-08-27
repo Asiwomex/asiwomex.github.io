@@ -1,3 +1,3 @@
 # Sample Portfolio
 This contains the html/css and js codes for a sample portfolio.
-All other items are in the assets folder
+All other items are in the assets folder, use as you please
