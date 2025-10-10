@@ -2,8 +2,19 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
+  const overlay = document.getElementById("menuOverlay");
+  const body = document.body;
+  
   menu.classList.toggle("open");
   icon.classList.toggle("open");
+  overlay.classList.toggle("active");
+  
+  // Prevent body scroll when menu is open
+  if (menu.classList.contains("open")) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "";
+  }
 }
 
 // ===== THEME TOGGLE =====
@@ -324,9 +335,14 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
+    const overlay = document.getElementById("menuOverlay");
+    const body = document.body;
+    
     if (menu && menu.classList.contains("open")) {
       menu.classList.remove("open");
       icon.classList.remove("open");
+      overlay.classList.remove("active");
+      body.style.overflow = "";
     }
   }
 });
