@@ -117,8 +117,32 @@
     flex-direction: column;
   }
 
-  .about-img-wrapper {
-    height: 300px;
+  .stats-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-circle img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stats-number {
+    font-size: 2.5rem;
+  }
+
+  .highlight-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .highlight-icon {
+    margin-bottom: 0.75rem;
   }
 
   /* Projects */
@@ -190,12 +214,34 @@
   }
 
   /* About Section */
-  .about-img-wrapper {
-    height: 250px;
-  }
-
   .details-container {
     padding: 1.5rem;
+  }
+
+  .stats-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-circle img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .stats-number {
+    font-size: 2.25rem;
+  }
+
+  .stats-label {
+    font-size: 0.9rem;
+  }
+
+  .stats-detail {
+    font-size: 0.875rem;
   }
 
   .text-container {
@@ -204,6 +250,38 @@
 
   .text-container p {
     font-size: 0.95rem;
+  }
+
+  .intro-badge {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .badge-icon {
+    font-size: 1.1rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+
+  .highlight-item {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .highlight-icon {
+    min-width: 45px;
+    height: 45px;
+    font-size: 1.75rem;
+  }
+
+  .highlight-content h4 {
+    font-size: 1.05rem;
+  }
+
+  .highlight-content p {
+    font-size: 0.875rem;
   }
 
   /* Skills Section */
@@ -217,10 +295,6 @@
 
   .skill-item h3 {
     font-size: 1rem;
-  }
-
-  .skill-level {
-    font-size: 0.8rem;
   }
 
   /* Projects Section */
@@ -321,16 +395,61 @@
     font-size: 0.9rem;
   }
 
-  .about-img-wrapper {
-    height: 200px;
-  }
-
   .details-container {
     padding: 1rem;
   }
 
+  .stats-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon-circle img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stats-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .stats-number {
+    font-size: 2rem;
+  }
+
+  .stats-label {
+    font-size: 0.85rem;
+  }
+
+  .stats-detail {
+    font-size: 0.8rem;
+  }
+
   .text-container {
     padding: 1rem;
+  }
+
+  .intro-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .badge-icon {
+    font-size: 1rem;
+  }
+
+  .highlight-item {
+    padding: 0.875rem;
+  }
+
+  .highlight-icon {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
   }
 
   .project-content {
@@ -486,6 +605,20 @@
     background: var(--bg-secondary);
     color: var(--text-primary);
   }
+
+  .highlight-item:hover {
+    transform: none;
+  }
+
+  .stats-card:hover .card-decoration {
+    transform: none;
+  }
+
+  /* Enable tap interactions for mobile */
+  .stats-card,
+  .highlight-item {
+    -webkit-tap-highlight-color: rgba(59, 130, 246, 0.1);
+  }
 }
 
 /* ===== WIDE SCREENS (1600px and above) ===== */
@@ -507,9 +640,34 @@
     height: 450px;
   }
 
-  .about-img-wrapper {
-    width: 450px;
-    height: 450px;
+  .about-details-container {
+    max-width: 1200px;
+  }
+
+  .about-containers {
+    gap: 2rem;
+  }
+
+  .stats-card {
+    padding: 3rem 2.5rem;
+  }
+
+  .icon-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .icon-circle img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stats-number {
+    font-size: 3.5rem;
+  }
+
+  .highlight-item {
+    padding: 1.5rem;
   }
 
   .skills-grid {
