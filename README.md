@@ -1,6 +1,6 @@
 # Asiwome Boateng - DevOps Engineer Portfolio
 
-A modern, responsive portfolio website showcasing my skills, projects, and experience as a DevOps Engineer. Built with vanilla HTML, CSS, and JavaScript featuring advanced animations, dark mode, and optimal performance.
+A modern, responsive portfolio website showcasing my skills, projects, and experience as a Web Developer & DevOps Engineer. Built with vanilla HTML, CSS, and JavaScript featuring advanced animations, dark mode, and optimal performance.
 
 ## ✨ Features
 
